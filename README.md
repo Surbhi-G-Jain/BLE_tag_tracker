@@ -11,7 +11,7 @@ pip3 install bleak
 pip3 install asyncio
 
 # command to execute the script
-go the file location and execute belw command in terminal window
+go the file location and execute below command in terminal window
 python BLE_Tag_tracker.py
 
 
