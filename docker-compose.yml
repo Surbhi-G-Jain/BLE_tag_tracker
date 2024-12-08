@@ -1,0 +1,10 @@
+services:
+  ibeacon-detector:
+    build: .
+    container_name: ibeacon-detector
+    network_mode: host  # Access host network (for Bluetooth)
+    volumes:
+      - .:/myproject  # Mount the current directory to /app inside the container
+    environment:
+      - PYTHONUNBUFFERED=1  # Ensure logs are not buffered, useful for debugging
+    restart: unless-stopped  # Auto restart if the container crashes
